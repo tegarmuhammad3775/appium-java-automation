@@ -41,6 +41,8 @@ public class mobile {
         //assertion
         driver.findElement(By.id("com.fghilmany.dietmealapp:id/tv_header_name")).isDisplayed();
 
+        //close app
+        driver.quit();
 
 
     }
