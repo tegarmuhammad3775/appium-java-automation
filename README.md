@@ -43,3 +43,7 @@ Appium Automation with Cucumber
 <Br>
 ![image](https://github.com/tegarmuhammad3775/appium-java-automation/assets/23182414/91a2fbd2-b551-4e84-9a1c-921c3fd56a22)
 <br> Link : https://youtu.be/12e0X0NX2Ic
+
+**=> Cucumber Reporting**
+<br>
+![image](https://github.com/tegarmuhammad3775/appium-java-automation/assets/23182414/f0ad00ee-2fab-4662-8919-4faf80cd3eae)
