@@ -1,5 +1,6 @@
 package cucumber.stepDef;
 
+import cucumber.mobilePage.homePage;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -17,6 +18,8 @@ public class MyStepdefs {
     public static AndroidDriver driver;
     public static DesiredCapabilities capabilities;
     public static String baseUrl = "http://127.0.0.1:4723/";
+
+
 
     @Given("Membuka Aplikasi")
     public void membukaAplikasi() throws MalformedURLException {
@@ -39,9 +42,15 @@ public class MyStepdefs {
     @When("Input Data")
     public void inputData() {
         //proses flow 1
-        driver.findElement(By.id("com.fghilmany.dietmealapp:id/et_name")).sendKeys("My Skill");
-        driver.findElement(By.id("com.fghilmany.dietmealapp:id/et_weight")).sendKeys("55");
-        driver.findElement(By.id("com.fghilmany.dietmealapp:id/et_height")).sendKeys("175");
+//        driver.findElement(By.id("com.fghilmany.dietmealapp:id/et_name")).sendKeys("My Skill");
+//        driver.findElement(By.id("com.fghilmany.dietmealapp:id/et_weight")).sendKeys("55");
+//        driver.findElement(By.id("com.fghilmany.dietmealapp:id/et_height")).sendKeys("175");
+//        driver.findElement(By.id("com.fghilmany.dietmealapp:id/rb_male")).click();
+//        driver.findElement(By.id("com.fghilmany.dietmealapp:id/bt_next")).click();
+
+        //Page Object Model
+        homePage homePage = new homePage(driver);
+        homePage.inputForm("My Skill", "55", "175");
         driver.findElement(By.id("com.fghilmany.dietmealapp:id/rb_male")).click();
         driver.findElement(By.id("com.fghilmany.dietmealapp:id/bt_next")).click();
     }
